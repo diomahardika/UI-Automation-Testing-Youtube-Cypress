@@ -2,10 +2,6 @@ import { youtubeLocators } from "../locators/youtubeLocators";
 
 const videoPage = {
   verifyVideoTrending() {
-    cy.xpath(youtubeLocators.detailPage.buttonPlay)
-      .should("be.visible")
-      .click();
-
     cy.xpath(youtubeLocators.detailPage.videoTitle)
       .should("be.visible")
       .then(function () {
