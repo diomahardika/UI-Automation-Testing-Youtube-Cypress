@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "html-report": "cypress run --spec cypress/e2e/1-ui-testing --browser chrome --headed"
+    "html-report": "cypress run --spec cypress/e2e/1-ui-testing --browser edge --headed"
   },
   "devDependencies": {
     "cypress": "^15.5.0",
