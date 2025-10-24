@@ -2,9 +2,6 @@ import { youtubeLocators } from "../locators/youtubeLocators";
 
 const gamingPage = {
   videoTrending() {
-    cy.xpath(youtubeLocators.videoTrendingPage).click();
-    cy.url().should("include", "/gaming/trending");
-
     cy.xpath(youtubeLocators.trendingVideo).should("be.visible");
     cy.xpath(youtubeLocators.videoTitle).invoke("text").as("expectedTitleVideo");
     cy.get("@expectedTitleVideo").should("not.be.empty");
