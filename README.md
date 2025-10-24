@@ -41,9 +41,6 @@ Pastikan Anda telah menginstal perangkat lunak berikut di mesin Anda:
 3.  **Konfigurasi Variabel Lingkungan:**
     -   Buat file `.env` di direktori utama proyek dengan menyalin dari file [`.env.example`](.env.example).
     -   Isi nilai `CYPRESS_BASE_URL` di dalam file `.env`:
-      ```
-      CYPRESS_BASE_URL=https://www.youtube.com
-      ```
 
 ## ▶️ Menjalankan Tes
 
